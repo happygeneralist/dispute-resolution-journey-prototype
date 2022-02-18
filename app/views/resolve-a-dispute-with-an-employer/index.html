@@ -11,6 +11,11 @@
 
 {% block content %}
 
+<h1 class="govuk-heading-l">Resolve a dispute with an employer: step by step</h1>
+<p class="govuk-body">One sentence that accurately decribes the overall process (e.g. How to transport goods commercially if you’re driving from the UK to any international destination.) </p>
+<p class="govuk-body">If you already been dismissed you will need to <a href="#"appeal your dissmal</a></p>
+
+
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
 
 {{ govukAccordion({
@@ -18,23 +23,17 @@
   items: [
     {
       heading: {
-        text: "Understanding agile project management"
-      },
-      summary: {
-        text: "Introductions, methods, core features."
+        text: "Identify if I have a dispute with work"
       },
       content: {
         html:
         '<ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Agile and government services: an introduction</a>
+              <a class="govuk-link" href="/..">Watch a video describing the overall process</a>
+              </li><li>
+              <a class="govuk-link" href="https://www.acas.org.uk/pay-and-wages">Check what if your workplace incident is a legal claim</a>
             </li>
-            <li>
-              <a class="govuk-link" href="#">Agile methods: an introduction</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Core principles of agile</a>
-            </li>
+
         </ul>'
       }
     },
