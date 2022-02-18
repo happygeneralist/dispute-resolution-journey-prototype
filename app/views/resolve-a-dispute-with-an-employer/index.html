@@ -68,6 +68,10 @@
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
+              <a class="govuk-link" href="/speak-to-an-employer-about-a-work-problem">Speak to an employer about a work problem: step by step</a>
+            </li>
+        <ul class="govuk-list">
+            <li>
               <a class="govuk-link" href="https://www.acas.org.uk/how-to-raise-a-problem-at-work">Find out how to raise a problem at work</a>
             </li>
         </ul>'
@@ -118,7 +122,11 @@
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="/negotiate-an-agreement-with-an-employer-through-early-conciliation"> Negotiate an agreement with an employer with early conciliation: step by step</a>
+            </li>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="/start-tell">Find a solution to your employment dispute (tell.acas.org.uk)</a>
             </li>
         </ul>'
       }
@@ -143,3 +151,40 @@
   ]
 }) }}
 {% endblock %}
+
+<%= render "govuk_publishing_components/components/step_by_step_nav", {
+  steps: [
+    {
+      title: "Do a thing",
+      contents: [
+        {
+          type: "paragraph",
+          text: "This is a paragraph of text."
+        },
+        {
+          type: "paragraph",
+          text: "This is also a paragraph of text that intentionally contains lots of words in order to fill the width of the page successfully to check layout and so forth."
+        }
+      ]
+    },
+    {
+      title: "Do another thing",
+      logic: "and",
+      contents: [
+        {
+          type: "paragraph",
+          text: "Some more text."
+        }
+      ]
+    },
+    {
+      title: "Do something else",
+      contents: [
+        {
+          type: "paragraph",
+          text: "This is yet another paragraph."
+        }
+      ]
+    }
+  ]
+} %>
