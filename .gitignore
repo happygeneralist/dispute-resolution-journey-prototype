@@ -1,0 +1,3 @@
+node_modules/
+app/views/.DS_Store
+.env

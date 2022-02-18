@@ -5,40 +5,41 @@
   Home – GOV.UK Prototype Kit
 {% endblock %}
 
+
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Prototype your service using GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukButton({
+      text: 'View prototype',
+      href: '/learn-to-resolve-a-dispute-with-an-employer',
+      isStartButton: true
+    }) }}
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="/docs/tutorials-and-examples">Tutorials and templates</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
-        </li>
-      </ul>
-    </div>
+    <h2 class="govuk-heading-m govuk-!-margin-top-5">Related links</h2>
+    <ul class="govuk-list">
+      <li>
+        <a href="https://acas-design-history.herokuapp.com/">
+          Design history
+        </a>
+      </li>
+      <li>
+        <a href="https://trello.com/b/OgoG2u6N/ws1-idr-content-strategy-2021-smarter-resolution">
+          Trello
+        </a>
+      </li>
+      <li>
+        <a href="https://">
+          Miro Board
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ministryofjustice/hmpps-manage-supervisions-prototype">
+          Prototype GitHub repository
+        </a>
+      </li>
+    </ul>
   </div>
+</div>
 
 {% endblock %}
