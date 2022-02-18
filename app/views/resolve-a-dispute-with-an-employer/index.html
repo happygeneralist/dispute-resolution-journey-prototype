@@ -12,8 +12,8 @@
 {% block content %}
 
 <h1 class="govuk-heading-l">Resolve a dispute with an employer: step by step</h1>
-<p class="govuk-body">One sentence that accurately decribes the overall process (e.g. How to transport goods commercially if you’re driving from the UK to any international destination.) </p>
-<p class="govuk-body">If you already been dismissed you will need to <a href="#">appeal your dissmal</a></p>
+<p class="govuk-body">How to resolve a dispute with an employer, including taking legal action. </p>
+<p class="govuk-body">If you have already been dismissed you will need to <a href="#">appeal your dismissal</a></p>
 
 
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
@@ -23,7 +23,7 @@
   items: [
     {
       heading: {
-        text: "Identify if you have a dispute with an employer"
+        text: "Check if you have a dispute"
       },
       content: {
         html:
@@ -33,126 +33,82 @@
               </li><li>
               <a class="govuk-link" href="https://www.acas.org.uk/pay-and-wages">Check if your problem at work is a legal claim</a>
             </li>
+            <li>
+              <a class="govuk-link" href="https://www.acas.org.uk/contact">Speak to the Acas helpline</a>
+              </li>
+              <li>
+                <a class="govuk-link" href="">Find out about time limits for claims</a>
+                </li>
+
 
         </ul>'
       }
     },
         {
       heading: {
-        text: "Get support and advice"
+        text: "Get emotional support"
       },
       content: {
         html:
-        '<p class="govuk-body">You can get support or counselling to help you through the dispute process</p>
+        '<p class="govuk-body">You can get support or counselling to help you while you try and resolve your dispute.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Creating an agile working environment</a>
+              <a class="govuk-link" href="#">Find out where to get support</a>
             </li>
-            <li>
-              <a class="govuk-link" href="#">Agile tools and techniques</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Set up a team wall</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Writing user stories</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Planning in agile</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Deciding on priorities</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Developing a roadmap</a>
-            </li>
+
         </ul>'
       }
     },
     {
       heading: {
-        text: "Speak informally with your employer (initial try)"
+        text: "Speak with your employer"
       },
       content: {
         html:
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/how-to-raise-a-problem-at-work">Find out how to raise a problem at work</a>
             </li>
         </ul>'
       }
     },
+
     {
       heading: {
-        text: "Get help from HR (first escalation)"
+        text: "Try formal steps"
       },
       content: {
         html:
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/grievance-procedure-step-by-step">Raise a formal grievance</a>
             </li>
+            <li>
+              <a class="govuk-link" href="https://www.acas.org.uk/mediation">Check if mediation is a good option for you</a>
+            </li>
+            <li><a class="govuk-link" href="https://www.acas.org.uk/appealing-a-disciplinary-or-grievance-outcome">Appeal a grievance outcome</a>
+              </li>
         </ul>'
       }
     },
+
     {
       heading: {
-        text: "Take formal steps with your employer"
+        text: "Get legal advice"
       },
       content: {
         html:
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/getting-legal-advice">Find sources of legal advice</a>
             </li>
         </ul>'
       }
     },
-    {
-      heading: {
-        text: "Mediation between both parties"
-      },
-      content: {
-        html:
-        '<p class="govuk-body">Content here</p>
-        <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#">Link here</a>
-            </li>
-        </ul>'
-      }
-    },
-    {
-      heading: {
-        text: "Seek legal advice"
-      },
-      content: {
-        html:
-        '<p class="govuk-body">Content here</p>
-        <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#">Link here</a>
-            </li>
-        </ul>'
-      }
-    },
-    {
-      heading: {
-        text: "Legal Action (Small claims court)"
-      },
-      content: {
-        html:
-        '<p class="govuk-body">Content here</p>
-        <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#">Link here</a>
-            </li>
-        </ul>'
-      }
-    },
+
     {
       heading: {
         text: "Start early conciliation"
@@ -169,14 +125,17 @@
     },
     {
       heading: {
-        text: "Employment Tribunal"
+        text: "Make a claim to an employment tribunal"
       },
       content: {
         html:
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="https://www.gov.uk/employment-tribunals/after-you-make-a-claim">Find out the employment tribunal process</a>
+              </li>
+            <li>
+              <a class="govuk-link" href="https://employmenttribunals.service.gov.uk/apply">Submit the employment tribunal claim form (ET1)</a>
             </li>
         </ul>'
       }
