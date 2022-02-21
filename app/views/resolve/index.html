@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+{% set title = 'Learn to resolve disputes with an employer' %}
+{% block pageTitle %}{{ title }}{% endblock %}
+
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-l">Speak to an employer about a work problem: step by step 1</h1>
+<p class="govuk-body">One sentence that accurately decribes the overall process (e.g. How to transport goods commercially if you’re driving from the UK to any international destination.) </p>
+<p class="govuk-body">If you already been dismissed you will need to <a href="#">appeal your dissmal</a></p>
+
+
+{% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+{{ govukAccordion({
+  id: "accordion-with-summary-sections",
+  items: [
+    {
+      heading: {
+        text: "Find your employers greivance policies"
+      },
+      content: {
+        html:
+        '<ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="/..">Watch a video describing the overall process</a>
+              </li><li>
+              <a class="govuk-link" href="https://www.acas.org.uk/pay-and-wages">Check if your problem at work is a legal claim</a>
+            </li>
+
+        </ul>'
+      }
+    },
+        {
+      heading: {
+        text: "Speak with your manager"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">You can get support or counselling to help you through the dispute process</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Creating an agile working environment</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Agile tools and techniques</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Set up a team wall</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Writing user stories</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Planning in agile</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Deciding on priorities</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Developing a roadmap</a>
+            </li>
+        </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "Speak with your HR manager"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Content here</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Link here</a>
+            </li>
+        </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "Appeal a dismissal"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Content here</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Link here</a>
+            </li>
+        </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "Go through mediation"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Content here</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Link here</a>
+            </li>
+        </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "Escalate to Early conciliation"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Content here</p>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="/negotiate-an-agreement-with-an-employer-through-early-conciliation"> Negotiate an agreement with an employer with early conciliation: step by step</a>
+          </li>
+        </ul>'
+      }
+    }
+  ]
+}) }}
+{% endblock %}
