@@ -10,9 +10,9 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-l">Speak to an employer about a work problem: step by step 1</h1>
-<p class="govuk-body">One sentence that accurately decribes the overall process (e.g. How to transport goods commercially if you’re driving from the UK to any international destination.) </p>
-<p class="govuk-body">If you already been dismissed you will need to <a href="#">appeal your dissmal</a></p>
+<h1 class="govuk-heading-l">Resolve a dispute with your employer: step by step 1</h1>
+<p class="govuk-body">How to resolve a dispute with your employer, including taking legal action.</p>
+
 
 
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
@@ -22,15 +22,15 @@
   items: [
     {
       heading: {
-        text: "Find your employers greivance policies"
+        text: "Check your employment rights"
       },
       content: {
         html:
         '<ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="/..">Watch a video describing the overall process</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/advice">Check if your dispute might be a legal claim</a>
               </li><li>
-              <a class="govuk-link" href="https://www.acas.org.uk/pay-and-wages">Check if your problem at work is a legal claim</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/contact">Speak to the Acas helpline</a>
             </li>
 
         </ul>'
@@ -38,88 +38,70 @@
     },
         {
       heading: {
-        text: "Speak with your manager"
+        text: "Check your time limit"
       },
       content: {
         html:
-        '<p class="govuk-body">You can get support or counselling to help you through the dispute process</p>
+        '<p class="govuk-body">There are time limits for making a claim to an employment tribunal. Your time limit will depend on the type of claim you have.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Creating an agile working environment</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Agile tools and techniques</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Set up a team wall</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Writing user stories</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Planning in agile</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Deciding on priorities</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Developing a roadmap</a>
+              <a class="govuk-link" href="#">Find out about time limits</a>
             </li>
         </ul>'
       }
     },
     {
       heading: {
-        text: "Speak with your HR manager"
+        text: "Get advice and support"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">Experiencing a work problem can be very stressful. You should get support where needed.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="#">Find out where to get emotional support</a>
             </li>
         </ul>'
       }
     },
     {
       heading: {
-        text: "Appeal a dismissal"
+        text: "Raise the problem at work"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">Before you start any legal process, you should raise the problem at work.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="#">Raise the problem at work: step by step</a>
             </li>
         </ul>'
       }
     },
     {
       heading: {
-        text: "Go through mediation"
+        text: "Start early conciliation"
       },
       content: {
         html:
         '<p class="govuk-body">Content here</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="#">Reach an agreement through early conciliation: step by step</a>
             </li>
         </ul>'
       }
     },
     {
       heading: {
-        text: "Escalate to Early conciliation"
+        text: "Make a claim to an employment tribunal"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">If you were not able to resolve the dispute at work or through early conciliation, you might think about making a claim to an employment tribunal.</p>
         <ul class="govuk-list">
           <li>
-            <a class="govuk-link" href="/negotiate-an-agreement-with-an-employer-through-early-conciliation"> Negotiate an agreement with an employer with early conciliation: step by step</a>
+            <a class="govuk-link" href="https://www.gov.uk/employment-tribunals"> Find out about going to an employment tribunal</a>
           </li>
         </ul>'
       }
