@@ -1,0 +1,185 @@
+{% extends "layout.html" %}
+{% set title = 'Learn to resolve disputes with an employer' %}
+{% block pageTitle %}{{ title }}{% endblock %}
+
+
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-l">Resolve a dispute with your employer: step by step</h1>
+<p class="govuk-body">How to resolve a dispute with your employer, including taking legal action. </p>
+
+
+{% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+{{ govukAccordion({
+  id: "accordion-with-summary-sections",
+  items: [
+    {
+      heading: {
+        text: "Check your employment rights"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">You should check the law around your dispute and what your rights are.</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.acas.org.uk/advice">Check if your dispute might be a legal clam</a>
+              </li>
+            <li>
+              <a class="govuk-link" href="https://www.acas.org.uk/contact">Speak to the Acas helpline</a>
+              </li>
+
+        </ul>'
+      }
+    },
+    {
+  heading: {
+    text: "Check your time limit"
+  },
+  content: {
+    html:
+    '<p class="govuk-body">There are time limits for making a claim to an employment tribunal. It's important to be aware of this even at the early stages of your dispute, so that you don't run out of time. Your time limit will depend on the type of claim you have.</p>
+    <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Find out about time limits</a>
+        </li>
+    </ul>'
+  }
+},
+
+
+        {
+      heading: {
+        text: "Get advice and support"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Experiencing a work problem can be stressful. You should get support where needed.</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Find out where to get emotional support</a>
+            </li>
+        </ul>'
+        '<p class="govuk-body">You might want to get legal advice if you:</p>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-body">are unsure about the law around your dispute</a>
+            </li>
+            <li>
+              <a class="govuk-body">want to know how strong your potential claim is</a>
+              </li>
+            <li>
+              <a class="govuk-body">need help working out the time limit for your potential claim</a>
+              </li>
+            </ul>'
+
+          '<p class="govuk-link" href="https://www.acas.org.uk/getting-legal-advice">Find sources of legal advice</p>'
+
+      }
+    },
+    {
+      heading: {
+        text: "Raise the problem at work"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Before you start any legal process, you should raise the problem at work. If you skip this step:</p>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-body">are unsure about the law around your dispute</a>
+          </li>
+          <li>
+            <a class="govuk-body">want to know how strong your potential claim is</a>
+          </li>
+          <li>
+            <a class="govuk-body">need help working out the time limit for your potential claim</a>
+            </li>
+            </ul>'
+
+
+              <p class="govuk-link" href="/speak-to-an-employer-about-a-work-problem">Raise the problem at work: step by step</p>
+      }
+    },
+
+
+    {
+      heading: {
+        text: "Start early conciliation"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">Early conciliation is a free Acas service. We talk to both you and your employer about your dispute. It gives you the chance to come to an agreement without having to go to tribunal.</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="/negotiate-an-agreement-with-an-employer-through-early-conciliation"> Reach an agreement through early conciliation: step by step</a>
+            </li>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="/start-tell">Find a solution to your employment dispute (tell.acas.org.uk)</a>
+            </li>
+        </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "Make a claim to an employment tribunal"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">If you were not able to resolve the dispute at work or through early conciliation, you might think about making a claim to an employment tribunal.</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/employment-tribunals/after-you-make-a-claim">Find out about going to an employment tribunal</a>
+              </li>
+            <li>
+              <a class="govuk-link" href="https://employmenttribunals.service.gov.uk/apply">Submit an employment tribunal claim form (ET1)</a>
+            </li>
+        </ul>'
+      }
+    }
+  ]
+}) }}
+{% endblock %}
+
+<%= render "govuk_publishing_components/components/step_by_step_nav", {
+  steps: [
+    {
+      title: "Do a thing",
+      contents: [
+        {
+          type: "paragraph",
+          text: "This is a paragraph of text."
+        },
+        {
+          type: "paragraph",
+          text: "This is also a paragraph of text that intentionally contains lots of words in order to fill the width of the page successfully to check layout and so forth."
+        }
+      ]
+    },
+    {
+      title: "Do another thing",
+      logic: "and",
+      contents: [
+        {
+          type: "paragraph",
+          text: "Some more text."
+        }
+      ]
+    },
+    {
+      title: "Do something else",
+      contents: [
+        {
+          type: "paragraph",
+          text: "This is yet another paragraph."
+        }
+      ]
+    }
+  ]
+} %>
