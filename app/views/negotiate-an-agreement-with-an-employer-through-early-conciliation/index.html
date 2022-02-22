@@ -10,9 +10,9 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-l">Negotiate an agreement with an employer with early conciliation: step by step</h1>
-<p class="govuk-body">One sentence that accurately decribes the overall process (e.g. How to transport goods commercially if you’re driving from the UK to any international destination.) </p>
-<p class="govuk-body">If you already been dismissed you will need to <a href="#">appeal your dissmal</a></p>
+<h1 class="govuk-heading-l">Reach an agreement through early conciliation: step by step</h1>
+<p class="govuk-body">How to use our early conciliation service, where a conciliator speaks with you and your employer separately to help resolve the dispute. </p>
+
 
 
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
@@ -22,7 +22,7 @@
   items: [
     {
       heading: {
-        text: "Make a claim by notify Acas"
+        text: "Notify Acas of the dispute"
       },
       content: {
         html:
@@ -36,43 +36,20 @@
     },
         {
       heading: {
-        text: "Provide details of dispute"
+        text: "Have your first call"
       },
       content: {
         html:
-        '<p class="govuk-body">You can get support or counselling to help you through the dispute process</p>
-        <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#">Creating an agile working environment</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Agile tools and techniques</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Set up a team wall</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Writing user stories</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Planning in agile</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Deciding on priorities</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Developing a roadmap</a>
-            </li>
-        </ul>'
+        '<p class="govuk-body">You'll have a short call with us so we can get your case allocated to a conciliator.</p>'
       }
     },
     {
       heading: {
-        text: "Meet with a conciliator"
+        text: "Speak with your conciliator"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">Your conciliator will call you to introduce themselves and get any more information they need.</p>
         <ul class="govuk-list">
             <li>
               <a class="govuk-link" href="#">Link here</a>
@@ -82,11 +59,11 @@
     },
     {
       heading: {
-        text: "Wait for the employer to respond"
+        text: "Wait for your employer to respond"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">Your conciliator will update you if your employer responds. Check your emails and voicemail regularly in case your conciliator has tried to contact you.</p>
         <ul class="govuk-list">
             <li>
               <a class="govuk-link" href="#">Link here</a>
@@ -96,14 +73,28 @@
     },
     {
       heading: {
-        text: "Create an agreement"
+        text: "Reach a legally binding agreement"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">If you and your employer reach an agreement, your conciliator will put this into a legally binding agreement called a COT3.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="#">Find out about COT3 agreements</a>
+            </li>
+        </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "Get a certificate and make a claim to an employment tribunal"
+      },
+      content: {
+        html:
+        '<p class="govuk-body">If you and your employer cannot reach an agreement, your conciliator will send you a certificate. You can use this to make a claim to an employment tribunal.</p>
+        <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Find out about making a claim to an employment tribunal</a>
             </li>
         </ul>'
       }

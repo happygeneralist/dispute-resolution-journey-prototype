@@ -10,9 +10,8 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-l">Speak to an employer about a work problem: step by step</h1>
-<p class="govuk-body">One sentence that accurately decribes the overall process (e.g. How to transport goods commercially if you’re driving from the UK to any international destination.) </p>
-<p class="govuk-body">If you already been dismissed you will need to <a href="#">appeal your dissmal</a></p>
+<h1 class="govuk-heading-l">Raise a problem at work: step by step</h1>
+<p class="govuk-body">How to try informal and formal steps at work to resolve a dispute. </p>
 
 
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
@@ -22,105 +21,62 @@
   items: [
     {
       heading: {
-        text: "Find your employers greivance policies"
+        text: "Speak with your manager or employer"
       },
       content: {
         html:
         '<ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="/..">Watch a video describing the overall process</a>
-              </li><li>
-              <a class="govuk-link" href="https://www.acas.org.uk/pay-and-wages">Check if your problem at work is a legal claim</a>
-            </li>
-
+              <a class="govuk-link" href="https://www.acas.org.uk/how-to-raise-a-problem-at-work">Find out how to speak with your employer about a work problem</a>
+              </li>
         </ul>'
       }
     },
         {
       heading: {
-        text: "Speak with your manager"
+        text: "Make a formal complaint"
       },
       content: {
         html:
-        '<p class="govuk-body">You can get support or counselling to help you through the dispute process</p>
+        '<p class="govuk-body">Making a formal complaint to your employer about a work problem is called raising a grievance.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Creating an agile working environment</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/grievance-procedure-step-by-step">Follow the steps of a grievance procedure</a>
             </li>
             <li>
-              <a class="govuk-link" href="#">Agile tools and techniques</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/grievance-letter-template">Use our grievance letter template</a>
             </li>
             <li>
-              <a class="govuk-link" href="#">Set up a team wall</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Writing user stories</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Planning in agile</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Deciding on priorities</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Developing a roadmap</a>
+              <a class="govuk-link" href="https://www.acas.org.uk/mediation">Check if mediation might be an option for you</a>
             </li>
         </ul>'
       }
     },
     {
       heading: {
-        text: "Speak with your HR manager"
+        text: "Appeal a decision"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">Raising an appeal is where you ask your employer to look again at a decision they've made that affects you. You can appeal a:</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="#">dismissal</a>
             </li>
         </ul>'
       }
     },
     {
       heading: {
-        text: "Appeal a dismissal"
+        text: "Ask Acas for early conciliation"
       },
       content: {
         html:
-        '<p class="govuk-body">Content here</p>
+        '<p class="govuk-body">If you and your employer are not able to resolve the problem, you can start the legal step of notifying Acas.</p>
         <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Link here</a>
+              <a class="govuk-link" href="https://acas-dispute-resolution.herokuapp.com/negotiate-an-agreement-with-an-employer-through-early-conciliation">Reach an agreement through early conciliation: step by step</a>
             </li>
-        </ul>'
-      }
-    },
-    {
-      heading: {
-        text: "Go through mediation"
-      },
-      content: {
-        html:
-        '<p class="govuk-body">Content here</p>
-        <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#">Link here</a>
-            </li>
-        </ul>'
-      }
-    },
-    {
-      heading: {
-        text: "Escalate to Early conciliation"
-      },
-      content: {
-        html:
-        '<p class="govuk-body">Content here</p>
-        <ul class="govuk-list">
-          <li>
-            <a class="govuk-link" href="/negotiate-an-agreement-with-an-employer-through-early-conciliation"> Negotiate an agreement with an employer with early conciliation: step by step</a>
-          </li>
         </ul>'
       }
     }
