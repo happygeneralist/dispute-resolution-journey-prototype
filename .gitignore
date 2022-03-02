@@ -3,3 +3,4 @@ app/views/.DS_Store
 .env
 **/.DS_Store
 .DS_Store
+app/assets/.DS_Store
