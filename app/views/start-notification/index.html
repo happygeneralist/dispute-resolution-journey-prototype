@@ -33,13 +33,14 @@
 </h1>
 
 <p class="govuk-body">
-Use this service to begin the legal process of notifying Acas that you want:
+Use this form to begin the legal process of notifying Acas that you want:
 </p>
 
-<p class="govuk-body">
-a certificate to make a claim to an employment tribunal
-early conciliation - where Acas speaks with you and your employer separately to try and resolve the problem without going to an employment tribunal
-</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>a certificate to make a claim to an employment tribunal</li>
+<li>early conciliation - where Acas speaks with you and your employer separately to try and resolve the problem without going to an employment tribunal
+</li>
+</ul>
 
 <p class="govuk-body">
 Check you’ve followed the right steps before starting.
@@ -49,22 +50,21 @@ Check you’ve followed the right steps before starting.
 Step 1: Check your time limit
 </h2>
 <p class="govuk-body">
-You usually have 3 months minus 1 day to notify Acas. This will depend on the type of work problem you have. Find out when your time limit starts.
+You usually have 3 months minus 1 day to notify Acas. This will depend on the type of work problem you have. <a href="#" class="govuk-link">Find out when your time limit starts</a>.
 </p>
 <h2 class="govuk-heading-m">
-Step 2: Check you’ve followed the right procedure at work /with your employer
+Step 2: Check you’ve followed the right procedure with your employer
 </h2>
 <p class="govuk-body">
-Problems at work can often be resolved by speaking with your employer.
+Problems at work can often be resolved by <a href="https://www.acas.org.uk/how-to-raise-a-problem-at-work" class="govuk-link" rel="noreferrer noopener" target="_blank">speaking with your employer</a>.
 </p>
 <p class="govuk-body">
-Before starting a legal process you should have either:
+Before starting the form you should have either:
 </p>
 
 <ul class="govuk-list govuk-list--bullet">
-  <li>
-raised a grievance - this is where you make a formal complaint to your employer</li>
-<li>raised an appeal - if you think you were dismissed unfairly</li>
+  <li><a href="https://www.acas.org.uk/grievance-procedure-step-by-step" class="govuk-link" rel="noreferrer noopener" target="_blank">raised a grievance</a> - this is where you make a formal complaint to your employer</li>
+<li><a href="https://www.acas.org.uk/appealing-a-disciplinary-or-grievance-outcome" class="govuk-link" rel="noreferrer noopener" target="_blank">raised an appeal</a> - if you think you were dismissed unfairly</li>
 </ul>
 
 {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
@@ -77,29 +77,27 @@ raised a grievance - this is where you make a formal complaint to your employer<
 <h2 class="govuk-heading-m">
 Step 3: Decide if you want early conciliation
 </h2>
-{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
 
-{% set html %}
-  <p class="govuk-notification-banner__heading">
-    Most claims are settled through Acas conciliation rather than at an employment tribunal.
-  </p>
-{% endset %}
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
 
-{{ govukNotificationBanner({
-  html: html
+{{ govukInsetText({
+  text: "Most claims are settled through Acas conciliation rather than at an employment tribunal."
 }) }}
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
 
 <h3 class="govuk-heading-s">
 What early conciliation is</h3>
 <p class="govuk-body">
 Early conciliation is a free service where Acas speaks with you and your employer separately to:
 </p>
-
+<p class="govuk-body">
 help you reach an agreement
 avoid you having to go to an employment tribunal
-
+</p>
+<h3 class="govuk-heading-s">
 The benefits
-Early conciliation is much quicker and less stressful than going to an employment tribunal because it:
+</h3>
+<p class="govuk-body">Early conciliation is much quicker and less stressful than going to an employment tribunal because it:</p>
 <ul class="govuk-list govuk-list--bullet">
   <li>
 lasts a maximum of 6 weeks - you can wait up to 1 year for a tribunal hearing</li>
@@ -127,34 +125,25 @@ your full name - for example, the name on your passport or driving licence</li>
 <li>the name and address of the organisation or employer - find this on a recent letter, payslip, contract, P60 or P45</li>
 </ul>
 
-{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
 
-{% set html %}
-  <p class="govuk-notification-banner__heading">
-    Submitting this form is the start of a legal process. You should:
-    check your time limit - you usually have 3 months minus 1 day to make a claim to an employment tribunal
-    try to resolve the problem with your employer first
-  </p>
-{% endset %}
-
-{{ govukNotificationBanner({
-  html: html
+{{ govukWarningText({
+  text: "Submitting this form is the start of a legal process",
+  iconFallbackText: "Warning"
 }) }}
-
-
 <p class="govuk-body">
-[Check your time limit for
-Remember there is a time limit for making a claim to an employment tribunal.</p>
+You should:
+</p>
 <ul class="govuk-list govuk-list--bullet">
   <li>
-- You should check how long you have in case you want to make a claim to an employment tribunal.</li>
-<li>
-- This does not change your time limit for making a claim to an employment tribunal.]</li>
+check your time limit - you usually have 3 months minus 1 day to make a claim to an employment tribunal</li>
+<li>try to resolve the problem with your employer</li>
 </ul>
+
 <p class="govuk-body">
 The form will automatically save so you can return to it if you need to.</p>
-<p class="govuk-body">What happens next
-You’ll be contacted by an Acas conciliator.</p>
+<h3 class="govuk-heading-s">What happens next</h3>
+<p class="govuk-body">You’ll be contacted by an Acas conciliator.</p>
 
 {{ govukButton({
   text: "Start now",
@@ -162,6 +151,7 @@ You’ll be contacted by an Acas conciliator.</p>
   classes: "govuk-!-margin-top-2 govuk-!-margin-bottom-8",
   isStartButton: true
 }) }}
+<br />
 
 If you’re not able to use this online service or speak another language, call 0300 123 1122.
 
@@ -220,7 +210,7 @@ To get more advice on your potential claim, you might also want to consult a sol
 
     <div class="govuk-grid-column-one-third">
 
-       The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit 
+       The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit
 -->
 
     </div>
