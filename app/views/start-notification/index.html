@@ -67,12 +67,13 @@ Before starting the form you should have either:
 <li><a href="https://www.acas.org.uk/appealing-a-disciplinary-or-grievance-outcome" class="govuk-link" rel="noreferrer noopener" target="_blank">raised an appeal</a> - if you think you were dismissed unfairly</li>
 </ul>
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
 
-{{ govukWarningText({
-  text: "You could lose up to 25% of any compensation you might receive if you did not try to resolve the problem with your employer before making a claim.",
-  iconFallbackText: "Warning"
+{{ govukInsetText({
+  text: "You could lose up to 25% of any compensation you might receive if you did not try to resolve the problem with your employer before making a claim."
 }) }}
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+
 
 <h2 class="govuk-heading-m">
 Step 3: Decide if you want early conciliation
@@ -153,65 +154,29 @@ The form will automatically save so you can return to it if you need to.</p>
 }) }}
 <br />
 
-If you’re not able to use this online service or speak another language, call 0300 123 1122.
-
-Acas early conciliation support
+<h3 class="govuk-heading-s">If you’re not able to use this online service</h3>
+<p class="govuk-body">
+If you need help using this online service or speak another language, you can contact Acas early conciliation support.
+</p>
+<p class="govuk-body">
 Telephone: 0300 123 1122
-Textphone: 18001 0300 123 1122
+</p>
+<p class="govuk-body">
 Monday to Friday, 9am to 5pm
-
-—--
-Get support and advice
-Experiencing a work problem can be stressful. It’s important to get the right support or advice.
-Acas helpline
-You can contact the Acas helpline to talk through your rights around your work problem.
-Emotional support
-Problems at work can cause stress, depression and anxiety. It’s important to talk with someone who can support you. Find out where you can get emotional support.
-Getting legal advice
-To get more advice on your potential claim, you might also want to consult a solicitor or legal firm.
-
-
-
------
-  <!--    <p class="govuk-body">Use this service to notify Acas that you want to:</p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>get a certificate to make a claim to an employment tribunal</li>
-        <li>try early conciliation</li>
-      </ul>
-      <p class="govuk-body">The form will ask you for:</p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>your full name - for example, the name on your passport or driving licence</li>
-        <li>the name and address of the organisation or employer - find this on a recent letter, payslip, P60 or P45</li>
-      </ul>
-
-      <h2 class="govuk-heading-m">If you want to try Acas early conciliation</h2>
-      <p class="govuk-body">It’s helpful if you can provide:</p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>your phone number and email address - so we can get in touch with you quickly</li>
-        <li>the contact details of someone that may be willing to sort things out without going to employment tribunal - for example, a line manager or HR </li>
-        <li>brief details about what’s happened - you’ll have the chance to tell us more later on</li>
-      </ul>
-
-      <p class="govuk-body">This is all you need to get a certificate to take to an employment tribunal.</p>
-
-
-
-
-
-      <p class="govuk-body">You can also <a class="govuk-link" href="#">register by post</a>.</p>
-
-      <p class="govuk-body">The online service is also available in <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
-
-      <p class="govuk-body">You cannot register for this service if you’re in the UK illegally.</p>
-    </div>
-
-    <div class="govuk-grid-column-one-third">
-
-       The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit
--->
+</p>
+<p class="govuk-body">
+Relay UK: 18001 0300 123 1122
+</p>
+<p class="govuk-body">
+Use Relay UK if you’re D/deaf, hearing impaired or have a speech impediment
+</p>
+<p class="govuk-body">
+Welsh language service
+</p>
+<p class="govuk-body">
+We can provide our services in Welsh on request. Yma cewch wybod sut mae cael gafael ar ein gwasanaethau yn Gymraeg.
+</p>
+       <!--The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit-->
 
     </div>
   </div>
